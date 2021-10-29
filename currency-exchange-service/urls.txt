@@ -40,3 +40,6 @@ Lower Case
 Custom Routes
 
 - http://localhost:8765/currency-exchange/from/USD/to/TR
+- http://localhost:8765/currency-conversion/from/USD/to/TR/quantity/10
+- http://localhost:8765/currency-conversion-feign/from/USD/to/TR/quantity/10
+- http://localhost:8765/currency-conversion-new/from/USD/to/TR/quantity/10
