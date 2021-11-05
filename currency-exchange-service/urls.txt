@@ -1,5 +1,5 @@
 Currency Exchange Service
-http://localhost:8000/currency-exchange/from/USD/to/TR
+http://localhost:8001/currency-exchange/from/USD/to/TR
 
 Currency Conversion Service
 http://localhost:8100/currency-conversion/from/USD/to/TR/quantity/10
@@ -43,3 +43,8 @@ Custom Routes
 - http://localhost:8765/currency-conversion/from/USD/to/TR/quantity/10
 - http://localhost:8765/currency-conversion-feign/from/USD/to/TR/quantity/10
 - http://localhost:8765/currency-conversion-new/from/USD/to/TR/quantity/10
+
+
+Open Zipkin / distributed tracing server on docker
+docker run -p 9411:9411 openzipkin/zipkin:2.23 
+
