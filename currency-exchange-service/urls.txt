@@ -1,5 +1,5 @@
 Currency Exchange Service
-http://localhost:8001/currency-exchange/from/USD/to/TR
+http://localhost:8000/currency-exchange/from/USD/to/TR
 
 Currency Conversion Service
 http://localhost:8100/currency-conversion/from/USD/to/TR/quantity/10
@@ -47,4 +47,14 @@ Custom Routes
 
 Open Zipkin / distributed tracing server on docker
 docker run -p 9411:9411 openzipkin/zipkin:2.23 
+
+Docker image creation->
+maven build.. -> goals(spring-boot:build-image -DskipTests) -> run
+
+images -> 
+312443231/microservices-currency-exchange-service:0.0.1-SNAPSHOT
+
+docker compose commands-> 
+//creating and starting containers which triggered in docker-compose.yaml path
+docker-compose up 
 
